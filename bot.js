@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    	message.channel.send(`took **${client.ws.ping}ms** to ping **the migos laundry roon**`);
   	}
 });
 
